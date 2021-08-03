@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famous memes</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: dodgerblue;
+        color: wheat;
+      }
+      body :is(.buttons, #app) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #app {
+        flex-direction: column;
+      }
+      .buttons {
+        padding-top: 2rem;
+        flex-direction: row;
+      }
+      button {
+        background: none;
+        height: 2.8rem;
+        width: 5rem;
+        background-color: tomato;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        /*box-shadow: 0px 0px 5px #fff;*/
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0px 2rem;
+        cursor: pointer;
+      }
+      span {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Famous memes</h1>
+    <div id="app"></div>
+    <div class="buttons">
+      <button id="prev">prev</button>
+      <span></span>
+      <button id="next">next</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
